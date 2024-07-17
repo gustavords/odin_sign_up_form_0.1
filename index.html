@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,47 @@
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/script.js" defer></script>
 </head>
-<body>
 
-    
-    
+<body>
+    <section class="side-panel">
+        <header class="logo-header">
+            <span>LOGO</span>
+            <h1>TITLE</h1>
+        </header>
+    </section>
+    <main>
+        <section class="top">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab molestias illum consectetur maiores eos
+                tempore nesciunt tempora! Eius expedita beatae sint corrupti. Accusantium laborum laudantium quam et at,
+                suscipit fuga!</p>
+            <p>small lorem</p>
+        </section>
+        <section class="middle">
+            <form action="" method="post" id="create_user">
+                <label for="f_name">First Name:</label>
+                <input type="text" name="first_name" id="f_name" required>
+                <label for="l_name">Last Name:</label>
+                <input type="text" name="last_name" id="l_name">
+
+                <label for="email">Email:</label>
+                <input type="email" name="e-mail" id="email" required>
+
+                <label for="phone_num">Phone:</label>
+                <input type="tel" name="phone_number" id="phone_num">
+
+                <label for="pw">Password:</label>
+                <input type="password" name="password" id="pw" required>
+                <label for="confirm_pw">Confirm Password:</label>
+                <input type="password" name="confirm_password" id="confirm_pw" required>
+            </form>
+        </section>
+        <section class="bottom">
+            <button type="submit" form="create_user"></button>
+            <p>ALready have an Account? <a href="">Log In</a></p>
+        </section>
+
+    </main>
+
 </body>
+
 </html>
