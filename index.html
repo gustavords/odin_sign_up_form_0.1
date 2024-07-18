@@ -29,12 +29,12 @@
             <div class="form-row">
                 <div class="form-col">
                     <label for="f_name">First Name:</label>
-                    <input type="text" name="first_name" id="f_name" required>
+                    <input type="text" name="first_name" id="f_name" minlength="2" maxlength="15" pattern="[a-zA-Z\']+" required>
 
                 </div>
                 <div class="form-col">
                     <label for="l_name">Last Name:</label>
-                    <input type="text" name="last_name" id="l_name">
+                    <input type="text" name="last_name" id="l_name" minlength="2" maxlength="15" pattern="[a-zA-Z\']+" >
                 </div>
             </div>
             <div class="form-row">
@@ -44,7 +44,7 @@
                 </div>
                 <div class="form-col">
                     <label for="phone_num">Phone:</label>
-                    <input type="tel" name="phone_number" id="phone_num">
+                    <input type="tel" name="phone_number" id="phone_num"  pattern="[0-9]{3} [0-9]{3} [0-9]{4}" placeholder="000 000 0000">
                 </div>
             </div>
 
