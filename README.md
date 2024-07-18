@@ -17,3 +17,7 @@ https://www.pexels.com/photo/multi-colored-abstract-painting-4744831/
 
 Resources:
 https://dev.to/fromwentzitcame/username-and-password-validation-using-regex-2175
+
+Goals:
+-update visual_queues to show only after some input
+-add tags with words on top of icons
