@@ -17,52 +17,73 @@
                 <h1>ODIN</h1>
             </div>
         </header>
-        <p>Photo by <a target="_blank" href="https://www.pexels.com/@ekaterinabelinskaya/">Ekaterina Belinskaya</a> on <a target="_blank" href="https://www.pexels.com/photo/multi-colored-abstract-painting-4744831/">Pexels.com</a></p>
+        <p>Photo by <a target="_blank" href="https://www.pexels.com/@ekaterinabelinskaya/">Ekaterina Belinskaya</a> on
+            <a target="_blank"
+                href="https://www.pexels.com/photo/multi-colored-abstract-painting-4744831/">Pexels.com</a>
+        </p>
     </section>
     <main>
         <section class="top">
-            <p>This is not a real online service? You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+            <p>This is not a real online service? You know you need something like this in your life to help you realize
+                your deepest dreams. Sign up <em>now</em> to get started.</p>
             <p>You <em>know</em> you want to.</p>
         </section>
         <form class="middle" action="" method="post" id="create_user">
             <h2>Let's do this!</h2>
             <div class="form-row">
                 <div class="form-col">
-                    <label for="f_name">First Name:</label>
-                    <input type="text" name="first_name" id="f_name" minlength="2" maxlength="15" pattern="[a-zA-Z\']+" required>
+                    <label for="f_name">First Name: <span aria-label="required"></span></label>
+                    <div class="form-error">
+                        <input type="text" name="first_name" id="f_name" class="form-element" minlength="2"
+                            maxlength="15" pattern="[a-zA-Z]+" required> <span class="form-accept"></span>
+                    </div>
 
                 </div>
                 <div class="form-col">
-                    <label for="l_name">Last Name:</label>
-                    <input type="text" name="last_name" id="l_name" minlength="2" maxlength="15" pattern="[a-zA-Z\']+" >
+                    <label for="l_name">Last Name: <span aria-label="required"></span></label>
+                    <div class="form-error">
+                        <input type="text" name="last_name" id="l_name" class="form-element" minlength="2"
+                            maxlength="15" pattern="[a-zA-Z]+" required> <span class="form-accept"></span>
+                    </div>
                 </div>
             </div>
             <div class="form-row">
                 <div class="form-col">
-                    <label for="email">Email:</label>
-                    <input type="email" name="e-mail" id="email" required>
+                    <label for="email">Email: <span aria-label="required"></span></label>
+                    <div class="form-error">
+                        <input type="email" name="e-mail" id="email" class="form-element" required> <span class="form-accept"></span>
+                    </div>
                 </div>
                 <div class="form-col">
-                    <label for="phone_num">Phone:</label>
-                    <input type="tel" name="phone_number" id="phone_num"  pattern="[0-9]{3} [0-9]{3} [0-9]{4}" placeholder="000 000 0000">
+                    <label for="phone_num">Phone: <span aria-label="required"></span></label>
+                    <div class="form-error">
+                        <input type="tel" name="phone_number" id="phone_num" class="form-element"
+                            pattern="[0-9]{3} [0-9]{3} [0-9]{4}" placeholder="000 000 0000" required> <span class="form-accept"></span>
+                    </div>
                 </div>
             </div>
 
             <div class="form-row">
                 <div class="form-col">
-                    <label for="pw">Password:</label>
-                    <input type="password" name="password" id="pw" required>
+                    <label for="pw">Password: <span aria-label="required"></span></label>
+                    <div class="form-error">
+                        <input type="password" name="password" id="pw" class="form-element"
+                            pattern="^(?=.*?[0-9])(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[^0-9A-Za-z]).{8,32}$" required> <span class="form-accept"></span>
+                    </div>
                 </div>
                 <div class="form-col">
-                    <label for="confirm_pw">Confirm Password:</label>
-                    <input type="password" name="confirm_password" id="confirm_pw" required>
+                    <label for="confirm_pw">Confirm Password: <span aria-label="required"></span></label>
+                    <div class="form-error">
+                        <input type="password" name="confirm_password" id="confirm_pw" class="form-element"
+                            pattern="^(?=.*?[0-9])(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[^0-9A-Za-z]).{8,32}$" required> <span class="form-accept"></span>
+                    </div>
                 </div>
             </div>
         </form>
 
         <section class="bottom">
             <button type="submit" form="create_user"> Create Account</button>
-            <p>Already have an Account? <a href="">Log In</a></p>
+            <p>Already have an Account? <a href="" class="log-in">Log In</a></p>
         </section>
 
     </main>
