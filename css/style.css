@@ -65,7 +65,7 @@ body {
 }
 
 .logo-header span {
-    background-image: url(../images/temp_preferences_eco.svg);
+    background-image: url(images/temp_preferences_eco.svg);
     height: 6.5rem;
     width: 6.5rem;
     background-repeat: no-repeat;
